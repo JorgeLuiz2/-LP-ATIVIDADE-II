@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+int main (){
+    setlocale (LC_ALL, "portuguese");
+
+int produto;
+
+printf("------------MENU-----------\n");
+printf("\n");
+printf("1-Camiseta             |R$ 5,00 \n");
+printf("2-Calça           |R$ 12,00 \n");
+printf("3-Tênis            |R$ 20,00 \n");
+printf("\n");
+printf("------------FIM-----------\n");
+
+printf("escolha um produto:");
+scanf ("%d",&produto);
+system ("cls || clear");
+switch (produto)
+{
+case 1:
+    printf("Camiseta             |R$ 5,00");
+  
+    break;
+case 2:
+    printf("Calça           |R$ 12,00");
+     
+    break;
+case 3:
+    printf("Tênis |R$ 20,00 ");
+   
+    break;
+
+default:
+    break;
+}
+
+
+      return 0;
+}
